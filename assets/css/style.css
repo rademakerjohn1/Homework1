@@ -36,9 +36,21 @@ header nav ul {
     list-style-type: none;
 }
 
+/* Added right border to list items */
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    border-right: 1px solid white;
+    padding-right: 15px;
+    text-align: center;
+}
+
+/* Removed right border from last list item */
+header nav ul li:last-child {
+    display: inline-block;
+    margin-left: 25px;
+    border-right: 0px;
+    padding-right: 15px;
 }
 
 a {
@@ -90,11 +102,13 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    border-radius: 25px;
 }
 
 /* Reduced code by selecting any image inside the content div */
 .content img {
     max-height: 200px;
+    border-radius: 25px;
 }
 
 /* Reduced code by selecting any h2 inside the content div */
@@ -113,6 +127,7 @@ p {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    border-radius: 25px;
 }
 
 .benefit-item {
